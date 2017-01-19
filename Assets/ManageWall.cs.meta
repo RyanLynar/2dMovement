@@ -1,10 +1,11 @@
 fileFormatVersion: 2
-guid: 9728a7adde924d546a60aa2143293801
-timeCreated: 1484760438
+guid: 837b50eb426081a4996f7b7d58830dcc
+timeCreated: 1484847657
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - arena: {fileID: 1565510827211240, guid: cf6dad18f29d403459fc9aad51c64e3a, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

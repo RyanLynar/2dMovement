@@ -46,7 +46,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\EnemySpawn.cs" />
+     <Compile Include="Assets\ManageWall.cs" />
      <Compile Include="Assets\Movement.cs" />
+     <Compile Include="Assets\enemyBehavior.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

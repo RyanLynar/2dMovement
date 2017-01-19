@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Attempt1.unity
+- path: Assets/Sumogon.unity
   isLoaded: 1
   isActive: 1
