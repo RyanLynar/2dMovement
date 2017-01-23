@@ -21,11 +21,12 @@ using UnityEngine;
         SpriteRenderer pr = player.GetComponent<SpriteRenderer>();
         player.AddComponent<Rigidbody2D>();
         Texture2D temp = new Texture2D(1, 1);
-        temp.LoadImage(System.IO.File.ReadAllBytes("Assets/Resources/Triangle.png"));
+        temp.LoadImage(System.IO.File.ReadAllBytes("Assets/Resources/Wall.png"));
         pr.sprite = Sprite.Create(temp, new Rect(0, 0, 10, 10), new Vector2(1, 1));
-        player.transform.localPosition = new Vector3(35, 1, 0);
+        player.transform.localPosition = new Vector3(-10, 0, 1);
         player.transform.localScale = new Vector3(50, 50, 1);
         player.AddComponent<PolygonCollider2D>();
+        pr.sortingOrder = 1;
         
     }
     private void initEnemy()
@@ -36,9 +37,10 @@ using UnityEngine;
         Texture2D temp = new Texture2D(1, 1);
         temp.LoadImage(System.IO.File.ReadAllBytes("Assets/Resources/Triangle.png"));
         er.sprite = Sprite.Create(temp, new Rect(0, 0, 10, 10), new Vector2(1, 1));
-        enemy.transform.localPosition =(new Vector3(35, 1, 1));
+        enemy.transform.localPosition =(new Vector3(10, 0, 1));
         enemy.transform.localScale = new Vector3(50, 50, 1);
         enemy.AddComponent<Rigidbody2D>();
         enemy.AddComponent<PolygonCollider2D>();
+        er.sortingOrder = 1;
     }
 }

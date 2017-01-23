@@ -28,6 +28,5 @@ public class ArenaMaster : MonoBehaviour {
     }
     void OnTriggerEnter2D(Collider2D coll)
     {
-        print("Hello");
     }
 }
