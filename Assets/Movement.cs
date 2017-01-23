@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 public class Movement : MonoBehaviour {
-    public float speedMult;
+    private float speedMult =50;
     Vector2 speed;
     Vector2 accel;
     bool vertAction, horizAction;
@@ -16,13 +16,15 @@ public class Movement : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        keyReleased();
         accel = new Vector3(0, 0, 0);
-        
-        HorizMove();
-        
-        VertMove();
+        if (tag.Equals( "Player"))
+        {
+            keyReleased();
 
+            HorizMove();
+
+            VertMove();
+        }
         speed = speed + accel;
         if (!horizAction)
         {
@@ -36,13 +38,6 @@ public class Movement : MonoBehaviour {
     }   
     void OnCollisionEnter2D(Collision2D coll)
     {
-    }
-    void OnTriggerExit2D(Collider2D coll)
-    {
-        if (gameObject.tag =="Player")
-        {
-            gameObject.transform.localPosition = new Vector3(0, 0, 1);
-        }
     }
     public void keyReleased()
     {

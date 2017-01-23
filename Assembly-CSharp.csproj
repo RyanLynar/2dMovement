@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{2CDF134C-2D3B-8593-836A-95DAB0A00DB0}</ProjectGuid>
+    <ProjectGuid>{CD4CEB56-28CB-497C-D9C6-C962566215B9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -46,8 +46,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\EnemySpawn.cs" />
-     <Compile Include="Assets\ManageWall.cs" />
+     <Compile Include="Assets\ArenaMaster.cs" />
+     <Compile Include="Assets\CreateWrestlers.cs" />
      <Compile Include="Assets\Movement.cs" />
      <Compile Include="Assets\enemyBehavior.cs" />
  <Reference Include="UnityEngine.UI">
